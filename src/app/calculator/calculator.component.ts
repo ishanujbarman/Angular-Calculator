@@ -40,4 +40,6 @@ export class CalculatorComponent {
       return num * this.factorial(num - 1);
     }
   }
+
+
 }
