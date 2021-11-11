@@ -2,7 +2,7 @@
   <div class="wrapper">
     <form class="calculator" name="calc">
       <input type="text" class="val" name="txt" [(ngModel)] = "prime" readonly="" />
-      <span class="clear" onclick="document.calc.txt.value =''">AC</span>
+      <button mat-raised-button color="warn" class="clear" onclick="document.calc.txt.value =''">AC</button>
       <span class="num" onclick="document.calc.txt.value += '/'">/</span>
       <span class="num" onclick="document.calc.txt.value += '7'">7</span>
       <span class="num" onclick="document.calc.txt.value += '8'">8</span>
@@ -24,8 +24,9 @@
         onclick="document.calc.txt.value = eval(calc.txt.value)"
         >=</span
       >
-      <button class="btm" (Click)="factorial(prime)">Factorial</button>
-      <button class="btm" (Click)="isPrime()">Prime</button><br>
+
+      <button mat-raised-button color="accent" class = 'btm'>Factorial</button>
+      <button mat-raised-button color="accent" class = 'btm'>Prime</button>
       <p>{{prime}} is {{result}}</p>
       <p>Factorial is {{fact}}</p>
     </form>

@@ -42,13 +42,14 @@
   font-size: 25px;
   margin: 2px;
   border-radius : 90px;
-
+  font-family: 'Roboto', sans-serif;
 }
 
-.calculator span.clear{
+.clear{
   grid-column: span 3;
   width: 250px;
-  background-color: #39A6A3;
+  border-radius : 90px;
+  margin: 2px;
 }
 
 .calculator span:hover{
@@ -69,17 +70,14 @@
 
 .btm{
   display: grid;
-  width: 80px;
   height: 80px;
   place-items: center;
-  background-color: rgb(233, 233, 233);
   color: black;
   font-size: 25px;
   margin: 2px;
   border-radius : 90px;
   grid-column: span 2;
   width: 160px;
-  background-color: #39A6A3;
   align-self: center;
   border: none;
 }
@@ -88,10 +86,6 @@
   background: rgb(157, 222, 224);
 }
 
-.btm:hover{
-  background: rgb(167, 167, 167);
-  box-shadow: -5px 2px 2px rgba(0, 0, 0, 0.2);
-}
 
 p{
   display: grid;
@@ -103,4 +97,34 @@ p{
   grid-column: span 4;
 }
 
+section {
+  display: table;
+}
 
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
